@@ -1,0 +1,9 @@
+@media only screen and (max-width: 600px) {
+  .responsive-uploaded {
+    position: absolute;
+    left: 0;
+  }
+  .mobile-responsive {
+    grid-template-columns: 1fr;
+  }
+}

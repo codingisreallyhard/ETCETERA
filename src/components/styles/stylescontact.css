@@ -1,0 +1,87 @@
+.headerContact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #8a2b06;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.main-image-contact {
+  width: 100%;
+  height: 25rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-image-contact img {
+  width: 110%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}
+
+.input {
+  position: relative;
+}
+
+.input__label {
+  position: absolute;
+  top: 0;
+  background: pink;
+  white-space: nowrap;
+  transform: translate(0, 0);
+  transform-origin: 0 0;
+  background: var(--color-background);
+  transition: transform 120ms ease-in;
+  font-weight: 700;
+  line-height: 1.2;
+  transform: translate(5%, 10%);
+  color: #333;
+}
+
+.input {
+  position: relative;
+}
+.input__label {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  transform: translate(0, 0);
+  transform-origin: 0 0;
+  transition: transform 120ms ease-in;
+  font-weight: 700;
+  line-height: 1.2;
+  transform: translate(5%, 10%);
+  color: #fff;
+}
+.input__field {
+  box-sizing: border-box;
+  display: block;
+  width: 150%;
+  border: 3px solid #999;
+  color: #333;
+  flex-grow: 70%;
+  border-radius: 8px;
+}
+.input__field:not(:-moz-placeholder-shown) + .input__label {
+  transform: translate(0.25rem, -75%) scale(0.8);
+}
+.input__field:focus + .input__label, .input__field:not(:placeholder-shown) + .input__label {
+  transform: translate(0.25rem, -75%) scale(0.8);
+}
+
+.containerdiv {
+  width: 100%;
+  height: 1200px;
+}
+
+/*  Mobile-View Media-Queries *//*# sourceMappingURL=stylescontact.css.map */
